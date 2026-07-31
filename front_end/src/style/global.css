@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  O Tailwind é utilizado de forma global em todo o projeto pela injeção acima. 
+  Isso significa que classes utilitárias como `bg-illury-beje` estão disponíveis em qualquer componente.
+  
+  Caso quisesse utilizá-lo de forma restrita (escopo), você poderia usar CSS Modules (ex: Button.module.css) 
+  e aplicar diretivas `@apply` apenas dentro das classes desse módulo, não injetando `@tailwind base` aqui. 
+  Entretanto, o uso global é o padrão recomendado na maioria dos projetos modernos para maior agilidade.
+*/
+
+@layer components {
+  /* Utilitários personalizados que compõem múltiplas classes do Tailwind */
+  
+  .textura-borda {
+    /* Textura solicitada para divs */
+    @apply border-4 border-illury-dourado border-dashed rounded-lg bg-illury-beje dark:bg-illury-marrom-escuro shadow-lg;
+  }
+
+  .textura-borda-solida {
+    /* Outro estilo de borda texturizada */
+    @apply border-[6px] border-double border-illury-marrom dark:border-illury-marrom-escuro rounded-xl;
+  }
+}
