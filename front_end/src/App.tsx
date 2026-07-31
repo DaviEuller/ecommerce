@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Appbar } from './componentes/appbar';
 import { AppRoutes } from './routes';
 import { inicializarMockData } from './models/dadosMockados';

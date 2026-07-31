@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ShoppingBasket, User, LogOut, LogIn, Sun, Moon } from 'lucide-react';
+import { ShoppingBasket, LogOut, LogIn, Sun, Moon } from 'lucide-react';
 import { usarContextoGlobal } from '../models/contextoGlobal';
 
 export const Appbar = () => {

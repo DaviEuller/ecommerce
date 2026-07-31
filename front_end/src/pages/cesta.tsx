@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { usarContextoGlobal } from '../models/contextoGlobal';
 import { BotaoPadrao } from '../componentes/botaoPadrao';

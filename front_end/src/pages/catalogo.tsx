@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { obterCatalogo, Produto } from '../models/dadosMockados';
 import { usarContextoGlobal } from '../models/contextoGlobal';
 import { BotaoPadrao } from '../componentes/botaoPadrao';
